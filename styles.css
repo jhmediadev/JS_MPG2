@@ -1,0 +1,94 @@
+:root {
+  --color-primary: #1b5a9a;
+  --color-secondary: #2828b6;
+}
+
+body {
+  background-color: #ffff;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+h1,
+div,
+input,
+button {
+  font-family: "Montserrat";
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+p {
+  color: red;
+  font-size: 1.5rem;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.head {
+  background-color: var(--color-primary);
+}
+
+h1.title {
+  color: #ffffff;
+}
+
+h1.title {
+  font-weight: 900;
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  margin: 0.2rem;
+  text-align: left;
+  width: 24rem;
+}
+
+.input__box {
+  height: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.button {
+  align-content: center;
+  border-radius: 0.4rem;
+  border: 0.3px solid #c5c5c5;
+  font-weight: bold;
+  font-size: 1.6rem;
+  width: 15rem;
+}
+
+.button:hover {
+  background-color: #b1b1b1;
+}
+
+@media screen and (min-width: 1024px) {
+  div {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  h1.title {
+    font-weight: 900;
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .button {
+    border-radius: 0.4rem;
+    border: 0.3px solid #c5c5c5;
+    font-weight: bold;
+    font-size: 1.6rem;
+    width: 15rem;
+  }
+}

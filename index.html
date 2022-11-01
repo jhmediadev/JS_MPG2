@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPG App2</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@200;300;600&display=swap"
+      rel="stylesheet"
+    />
+    <script scr="mpg2.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="head">
+        <h1 class="title">Vehicle Fuel Calculator</h1>
+      </div>
+      <div>
+        <p>
+          Please enter your information into the fields below. Be aware, the
+          calculations are an approximate summary and may not reflect all
+          costs.
+        </p>
+        <br />
+        <label for="miles">Miles Driven:</label>
+        <input class="input__box" type="text" id="milesDriven" autofocus />
+      </div>
+      <div>
+        <label for="gallons">Cost of Gas Per Gallon:</label>
+        <input class="input__box" type="text" id="pricePerGallon" />
+      </div>
+      <div>
+        <label for="mpgRating">Vehicle Miles Per Gallon Rating:</label>
+        <input class="input__box" type="text" id="mpgRating" />
+      </div>
+      <div>
+        <label for="gasUsed">Gallons of Gas Used:</label>
+        <input class="input__box" type="text" id="gasUsed" disabled/>
+      </div>
+      <div>
+        <label for="totalFuelCost">
+          <strong>Total Fuel Cost:</strong>
+        </label>
+        <input class="input__box" type="text" id="totalFuelCost" disabled />
+      </div>
+      <div>
+        <label></label>
+        <input
+          class="button"
+          id="calculate"
+          type="button"
+          value="CALCULATE"
+        />
+        <input
+        class="button"
+        id="clear"
+        type="button"
+        value="CLEAR"
+      />
+    </main>
+    <script src="./mpg2.js"></script>
+  </body>
+</html>
