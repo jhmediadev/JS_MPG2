@@ -39,12 +39,7 @@ const processEntries = () => {
 }
 
 function clearPage() {
-    $("#milesDriven").value = " ";
-    $("#pricePerGallon").value = " ";
-    $("#mpgRating").value = " ";
-    $("#gasUsed").value = " ";
-    $("#totalFuelCost").value = " ";
-    
+    $("#form").reset();  
     $("#milesDriven").focus();
 }
 

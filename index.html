@@ -18,48 +18,57 @@
       <div class="head">
         <h1 class="title">Vehicle Fuel Calculator</h1>
       </div>
-      <div>
-        <p>
-          Please enter your information into the fields below. Be aware, the 
-          calculations are an approximate summary and may not reflect all
-          costs.
-        </p>
-        <br />
-        <label for="miles">Miles Driven:</label>
-        <input class="input__box" type="text" id="milesDriven" autofocus placeholder="Example:    300" />
-      </div>
-      <div>
-        <label for="gallons">Cost of Gas Per Gallon at the Pump:</label>
-        <input class="input__box" type="text" id="pricePerGallon" placeholder="Example:    3.50"/>
-      </div>
-      <div>
-        <label for="mpgRating">Vehicle Miles Per Gallon Rating:</label>
-        <input class="input__box" type="text" id="mpgRating" placeholder="Example:     26" />
-      </div>
-      <div>
-        <label for="gasUsed">Gallons of Gas Used:</label>
-        <input class="input__box" type="text" id="gasUsed" disabled/>
-      </div>
-      <div>
-        <label for="totalFuelCost">
-          <strong>Total Fuel Cost:</strong>
-        </label>
-        <input class="input__box" type="text" id="totalFuelCost" disabled />
-      </div>
+      <form id="form" action="#">
+        <div>
+          <p>
+            Please enter your information into the fields below. Be aware, the
+            calculations are an approximate summary and may not reflect all
+            costs.
+          </p>
+          <br />
+          <label for="miles">Miles Driven:</label>
+          <input
+            class="input__box"
+            type="text"
+            id="milesDriven"
+            autofocus
+            placeholder="Example:    300"
+          />
+        </div>
+        <div>
+          <label for="gallons">Cost of Gas Per Gallon at the Pump:</label>
+          <input
+            class="input__box"
+            type="text"
+            id="pricePerGallon"
+            placeholder="Example:    3.50"
+          />
+        </div>
+        <div>
+          <label for="mpgRating">Vehicle Miles Per Gallon Rating:</label>
+          <input
+            class="input__box"
+            type="text"
+            id="mpgRating"
+            placeholder="Example:     26"
+          />
+        </div>
+        <div>
+          <label for="gasUsed">Gallons of Gas Used:</label>
+          <input class="input__box" type="text" id="gasUsed" disabled />
+        </div>
+        <div>
+          <label for="totalFuelCost">
+            <strong>Total Fuel Cost:</strong>
+          </label>
+          <input class="input__box" type="text" id="totalFuelCost" disabled />
+        </div>
+      </form>
       <div>
         <label></label>
-        <input
-          class="button"
-          id="calculate"
-          type="button"
-          value="CALCULATE"
-        />
-        <input
-        class="button"
-        id="clear"
-        type="button"
-        value="CLEAR"
-      />
+        <input class="button" id="calculate" type="button" value="CALCULATE" />
+        <input class="button" id="clear" type="reset" value="CLEAR" />
+      </div>
     </main>
     <script src="./mpg2.js"></script>
   </body>
